@@ -1,0 +1,154 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100 vh;
+}
+
+/* left side (image section */
+
+.image-section{
+    width: 35vw;
+    position: relative;
+}
+
+.background-image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.semi-trans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.483);
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 150px;
+}
+
+.odin-img {
+    height: 90%;
+}
+
+.odin-header {
+    font-family: norse;
+    font-size: 100px;
+    color: white;
+}
+
+.credits {
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    left: 28%;
+}
+
+.credits a {
+    color: rgb(255, 255, 255);
+}
+
+/* right side (form section) */
+
+.form-section {
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 50px;
+    width: 65vw;
+}
+
+.form-body {
+    background-color: white;
+    border: 1px solid rgb(235, 235, 235);
+    box-shadow: 0 5px 3px rgb(240, 240, 240);
+    height: 275px;
+    padding: 20px 30px;
+}
+
+.intro{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main-text {
+    margin: 0 0 40px 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.input-field {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-top: 10px
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin-bottom: 25px
+}
+
+label {
+    color:rgb(70, 70, 70);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+.submit-button {
+    color: white;
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgb(185, 185, 185);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 40px;
+    margin: 20px 30px;
+}
+
+.submit-button:hover {
+    background-color: #799a5c;
+    cursor: pointer;
+}
+
+.submit-button:active {
+    background-color: #88ae67;
+    cursor: pointer;
+}
+
+.login:hover {
+    color: #799a5c;
+}
+
+.login-text {
+    padding-left: 30px;
+    font-weight: 500;
+}
+
+.login {
+    color: #596D48;
+}
